@@ -25,8 +25,17 @@ class MyApp extends  StatelessWidget {
               Text("PANGGILAN")
             ]),
           ),
-          body: TabBarView(children: [
-            Text("Ini akan muncul di dalam tab CHATS"),
+          body: TabBarView(
+            children: [
+              ListTile(
+                leading: CircleAvatar(
+                  child: Icon(
+                    Icons.person
+                  ),
+                ),
+                title: Text("Nazib Akbar"),
+                subtitle: Text("Halo! sedang apa?"),
+            ),
             Text("Ini akan muncul di tab STATUS"),
             Text("Ini akan muncul di tab PANGGILAN")
           ],
@@ -35,7 +44,15 @@ class MyApp extends  StatelessWidget {
       ),
     );
   }
+  
+  // _widgetStatus(BuildContext context) {
+  //   return ListView.builder(
+  //     itemCount: ,
+  //     itemBuilder:
+  //   )
+  // }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -56,3 +73,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
