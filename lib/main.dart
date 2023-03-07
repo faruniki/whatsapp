@@ -4,7 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends  StatelessWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
@@ -44,6 +44,13 @@ class MyApp extends  StatelessWidget {
       ),
     );
   }
+
+  // _widgetStatus(BuildContext context) {
+  //   return ListView.builder(
+  //     itemCount: ,
+  //     itemBuilder: ,
+  //   )
+  // }
   
   // _widgetStatus(BuildContext context) {
   //   return ListView.builder(
